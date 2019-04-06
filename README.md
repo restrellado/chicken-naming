@@ -1,7 +1,5 @@
 ## README
 
-A repo with a Jupyter notebook for naming chickens
+Sometimes you just need to take your name and use it to generate a chicken name for your collaborative writing project. 
 
-Chicken names in chickennames.csv from https://countrysidenetwork.com/daily/poultry/chickens-101/good-chicken-names/
-
-Binder for this repo: [https://mybinder.org/v2/gh/tracykteal/chicken-naming/master](https://mybinder.org/v2/gh/tracykteal/chicken-naming/master)
+Thank you to Tracy Teal for making [this awesome repo](https://github.com/tracykteal/chicken-naming)
