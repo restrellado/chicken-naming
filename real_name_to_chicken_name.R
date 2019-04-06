@@ -30,3 +30,8 @@ convert_chicken <- function(real_name) {
 
 authors <- c("Josh", "Jesse", "Isabella", "Emily", "Ryan")
 authors %>% map_chr(convert_chicken)
+
+tibble(
+  real = authors, 
+  chicken = authors %>% map_chr(convert_chicken)
+)
