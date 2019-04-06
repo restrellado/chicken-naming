@@ -2,6 +2,12 @@ library(tidyverse)
 library(stringr)
 
 convert_chicken <- function(real_name) {
+  # Takes real names and picks a chicken name that starts with one of the 
+  # letters in the real name 
+  #  Args: 
+  #    real_name: a real name as character
+  #  Returns: a chicken name
+  
   # Read names
   nms <- readr::read_lines("chickennames.csv") 
   
@@ -22,4 +28,5 @@ convert_chicken <- function(real_name) {
   chicken_df2$chicken_names[sample(1:nrow(chicken_df2), 1)] 
 }
 
-convert_chicken("Ryan")
+authors <- c("Josh", "Jesse", "Isabella", "Emily", "Ryan")
+authors %>% map_chr(convert_chicken)
